@@ -26,7 +26,8 @@ void draw(){
   background(0);
   fill(255);
   textSize(width/23);
-  text("Click in window to load a random song", width/2, height/8);
+  text("Click in window to load a random song\n\nNOW PLAYING: \n" +
+      nowPlaying, width/2, height/8);
   text("NOW PLAYING: \n" + nowPlaying, width/2, height/3);
   if(song != null && started && !song.isPlaying()){
     loadSong();
